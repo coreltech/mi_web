@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CORELTECH IT SOLUTIONS - Soporte técnico profesional, redes y soluciones IT en Carabobo. Más de 10 años de experiencia en el sector tecnológico.">
+  <meta name="keywords" content="soporte técnico, reparación de computadoras, redes IT, mantenimiento de equipos, tecnología Carabobo">
+  <title>CORELTECH IT SOLUTIONS | Soporte Técnico Profesional en Carabobo</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <header class="navbar">
+    <div class="logo-container">
+      <img src="Img/logo-coreltech.png" alt="Logo CORELTECH" class="logo-img">
+      <div class="logo-text"></div>
+    </div>
+    <nav class="nav-links">
+      <a href="#hero" class="active">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#testimonios">Testimonios</a>
+      <a href="#contacto">Contacto</a>
+      <a href="blog.html">Blog</a>
+      <a href="politicas.html">Políticas</a>
+    </nav>
+    <button class="dark-mode-toggle" aria-label="Alternar modo oscuro" onclick="toggleDarkMode()">🌙</button>
+    <button class="menu-toggle" aria-label="Menú de navegación">☰</button>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section fade-in">
+    <div class="hero-content">
+      <h1>Tecnología que funciona, servicios que inspiran</h1>
+      <p>Soluciones IT profesionales para hogares y empresas en Carabobo. Más de 10 años de experiencia en el sector tecnológico.</p>
+      <div class="hero-buttons">
+        <a href="https://wa.me/584145828186" class="btn btn-primary" target="_blank" rel="noopener noreferrer">WhatsApp 24/7</a>
+        <a href="#contacto" class="btn btn-secondary">Contactar por Email</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="section services-section fade-in delay-1">
+    <div class="container">
+      <h2>Nuestros Servicios</h2>
+      <p class="section-subtitle">Soluciones tecnológicas personalizadas para cada necesidad</p>
+      
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-img">
+            <img src="Img/mantenimiento.jpg" alt="Mantenimiento de equipos" loading="lazy">
+          </div>
+          <div class="service-content">
+            <div class="service-icon">🔧</div>
+            <h3>Mantenimiento</h3>
+            <p>Diagnóstico y reparación de hardware y software para PC y laptops. Mantenimiento preventivo y correctivo.</p>
+          </div>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-img">
+            <img src="Img/redes.jpg" alt="Instalación de redes" loading="lazy">
+          </div>
+          <div class="service-content">
+            <div class="service-icon">🌐</div>
+            <h3>Redes</h3>
+            <p>Diseño, instalación y configuración de redes empresariales y domésticas. Soluciones cableadas e inalámbricas.</p>
+          </div>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-img">
+            <img src="Img/soporte.png" alt="Soporte técnico" loading="lazy">
+          </div>
+          <div class="service-content">
+            <div class="service-icon">⏱️</div>
+            <h3>Soporte 24/7</h3>
+            <p>Asistencia técnica remota y presencial para emergencias. Respuesta rápida y soluciones efectivas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nosotros -->
+  <section id="nosotros" class="section about-section fade-in delay-2">
+    <div class="container">
+      <h2>Expertos en Soluciones Tecnológicas</h2>
+      <div class="about-content">
+        <p>En CORELTECH combinamos una década de experiencia en TI con metodologías probadas para ofrecer soluciones tecnológicas confiables y escalables para empresas y particulares.</p>
+        
+        <div class="about-stats">
+          <div class="stat-item">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Años de experiencia</div>
+          </div>
+          
+          <div class="stat-item">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Clientes satisfechos</div>
+          </div>
+          
+          <div class="stat-item">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Soporte disponible</div>
+          </div>
+          
+          <div class="stat-item">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Garantía en servicios</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section id="testimonios" class="section testimonials-section fade-in delay-3">
+    <div class="container">
+      <h2>Lo que dicen nuestros clientes</h2>
+      <p class="section-subtitle">La satisfacción de nuestros clientes es nuestra mejor garantía</p>
+      
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <p class="testimonial-text">"CORELTECH resolvió nuestros problemas de red en menos de 24 horas. Su equipo demostró un conocimiento técnico excepcional y una gran profesionalidad."</p>
+          <div class="testimonial-author">María González, Empresa TechSolutions</div>
+        </div>
+        
+        <div class="testimonial-card">
+          <p class="testimonial-text">"Llevo años confiando en su servicio de mantenimiento preventivo. Mi empresa nunca ha tenido tiempos muertos por fallas tecnológicas gracias a su trabajo."</p>
+          <div class="testimonial-author">Carlos Pérez, Contabilidad Plus</div>
+        </div>
+        
+        <div class="testimonial-card">
+          <p class="testimonial-text">"Repararon mi laptop cuando otros me decían que no tenía solución. Rápidos, honestos y con precios justos. Los recomiendo totalmente."</p>
+          <div class="testimonial-author">Laura Martínez</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="section contact-section fade-in delay-4">
+    <div class="container">
+      <h2>Contáctanos</h2>
+      <p class="section-subtitle">Estamos listos para ayudarte con cualquier consulta o problema técnico</p>
+      
+      <div class="contact-container">
+        <form id="contact-form" action="https://formspree.io/f/meokyjld" method="POST">
+          <div class="form-group">
+            <label for="name" class="form-label">Nombre completo*</label>
+            <input type="text" id="name" name="name" class="form-control" placeholder="Tu nombre completo" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email" class="form-label">Correo electrónico*</label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="tu@email.com" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone" class="form-label">Teléfono</label>
+            <input type="tel" id="phone" name="phone" class="form-control" placeholder="+58 412-1234567">
+          </div>
+          
+          <div class="form-group">
+            <label for="service" class="form-label">Servicio de interés*</label>
+            <select id="service" name="service" class="form-control" required>
+              <option value="" disabled selected>Seleccione un servicio</option>
+              <option value="mantenimiento">Mantenimiento de equipos</option>
+              <option value="redes">Instalación de redes</option>
+              <option value="soporte">Soporte técnico</option>
+              <option value="consulta">Consulta general</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="message" class="form-label">Mensaje*</label>
+            <textarea id="message" name="message" class="form-control" rows="5" placeholder="Describe tu problema o consulta en detalle..." required></textarea>
+          </div>
+          
+          <input type="hidden" name="_subject" value="Nuevo mensaje desde CORELTECH">
+          <input type="hidden" name="_language" value="es">
+          <input type="text" name="_gotcha" style="display:none;">
+          
+          <button type="submit" class="btn btn-primary">
+            <span class="submit-text">Enviar Mensaje</span>
+            <span class="loading-icon">⌛</span>
+          </button>
+          
+          <div id="form-status" class="form-status"></div>
+        </form>
+        
+        <div class="contact-info">
+          <h3>Información de contacto</h3>
+          
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <div class="contact-text">
+              <a href="tel:+584145828186">+58 414-5828186</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <span class="contact-icon">📧</span>
+            <div class="contact-text">
+              <a href="mailto:contacto@coreltech.com">contacto@coreltech.com</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div class="contact-text">
+              Naguanagua, Carabobo, Venezuela
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <span class="contact-icon">⏰</span>
+            <div class="contact-text">
+              Lunes a Viernes: 8:00 AM - 6:00 PM<br>
+              Sábados: 9:00 AM - 2:00 PM<br>
+              Emergencias: 24/7
+            </div>
+          </div>
+          
+          <div class="whatsapp-alternative">
+            <p>¿Prefieres contactarnos directamente por WhatsApp?</p>
+            <a href="https://wa.me/584145828186" class="btn btn-primary" style="background-color: #25D366; border-color: #25D366;">
+              💬 WhatsApp Directo
+            </a>
+          </div>
+          
+          <h4 style="margin-top: 1.5rem;">Síguenos</h4>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram">📸</a>
+            <a href="#" class="social-link" aria-label="Facebook">👍</a>
+            <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+            <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/584145828186" class="whatsapp-float" aria-label="Contactar por WhatsApp">💬</a>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-col">
+          <div class="footer-logo">CORELTECH</div>
+          <p class="footer-description">Soluciones tecnológicas confiables y profesionales para hogares y empresas en Carabobo.</p>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Enlaces rápidos</h4>
+          <div class="footer-links">
+            <a href="index.html">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#testimonios">Testimonios</a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <div class="footer-links">
+            <a href="politicas.html">Políticas de privacidad</a>
+            <a href="politicas.html">Términos de servicio</a>
+            <a href="blog.html">Blog técnico</a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <div class="footer-links">
+            <a href="tel:+584145828186">+58 414-5828186</a>
+            <a href="mailto:contacto@coreltech.com">contacto@coreltech.com</a>
+            <a href="#contacto">Formulario de contacto</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2025 CORELTECH IT SOLUTIONS. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Modo oscuro
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+      localStorage.setItem('darkMode', document.body.classList.contains('dark'));
+      
+      // Cambiar ícono según el modo
+      const darkModeToggle = document.querySelector('.dark-mode-toggle');
+      if (document.body.classList.contains('dark')) {
+        darkModeToggle.textContent = '☀️';
+      } else {
+        darkModeToggle.textContent = '🌙';
+      }
+    }
+    
+    // Cargar preferencia de modo oscuro
+    if (localStorage.getItem('darkMode') === 'true') {
+      document.body.classList.add('dark');
+      document.querySelector('.dark-mode-toggle').textContent = '☀️';
+    }
+    
+    // Menú móvil
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+    
+    // Cerrar menú al hacer clic en un enlace
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
+    });
+    
+    // Manejo del formulario
+    const contactForm = document.getElementById('contact-form');
+    const formStatus = document.getElementById('form-status');
+    const submitBtn = contactForm.querySelector('button[type="submit"]');
+    const submitText = submitBtn.querySelector('.submit-text');
+    const loadingIcon = submitBtn.querySelector('.loading-icon');
+    
+    // Validación en tiempo real
+    contactForm.querySelectorAll('input, textarea, select').forEach(input => {
+      input.addEventListener('input', () => {
+        if (input.checkValidity()) {
+          input.classList.remove('invalid');
+        } else {
+          input.classList.add('invalid');
+        }
+      });
+    });
+    
+    contactForm.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      
+      // Mostrar estado de carga
+      submitText.textContent = "Enviando...";
+      loadingIcon.style.display = 'inline-block';
+      submitBtn.disabled = true;
+      
+      try {
+        const response = await fetch(contactForm.action, {
+          method: 'POST',
+          body: new FormData(contactForm),
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+        
+        if (response.ok) {
+          formStatus.textContent = "¡Mensaje enviado con éxito! Nos pondremos en contacto contigo pronto.";
+          formStatus.className = 'form-status success';
+          contactForm.reset();
+        } else {
+          throw new Error('Error en el servidor');
+        }
+      } catch (error) {
+        formStatus.textContent = "Hubo un error al enviar el mensaje. Por favor intenta nuevamente o contáctanos directamente por WhatsApp.";
+        formStatus.className = 'form-status error';
+        console.error('Error:', error);
+      } finally {
+        submitText.textContent = "Enviar Mensaje";
+        loadingIcon.style.display = 'none';
+        submitBtn.disabled = false;
+        formStatus.style.display = 'block';
+        
+        // Ocultar mensaje después de 5 segundos
+        setTimeout(() => {
+          formStatus.style.display = 'none';
+        }, 5000);
+      }
+    });
+    
+    // Scroll suave para enlaces internos
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+    
+    // Cambiar clase activa en navegación al hacer scroll
+    const sections = document.querySelectorAll('section');
+    const navItems = document.querySelectorAll('.nav-links a');
+    
+    window.addEventListener('scroll', () => {
+      let current = '';
+      
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        
+        if (pageYOffset >= sectionTop - 100) {
+          current = section.getAttribute('id');
+        }
+      });
+      
+      navItems.forEach(item => {
+        item.classList.remove('active');
+        if (item.getAttribute('href') === `#${current}`) {
+          item.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
