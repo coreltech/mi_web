@@ -1,17 +1,16 @@
-backend:
-  name: github
-  repo: CorelTech/mi_web # ¡Reemplaza esto!
-  branch: main
-
-media_folder: "static/img/blog"
-public_folder: "/img/blog"
+title: Blog Técnico CorelTech
+description: Artículos sobre tecnología, redes y mantenimiento de equipos.
+baseurl: ""
+url: "https://tu-sitio.netlify.app "
+theme: jekyll-theme-minimal
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
 
 collections:
-  - name: "blog"
-    label: "Artículos del Blog"
-    folder: "_posts"  # Cambia a "blog" si no usas Jekyll
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+  - name: blog
+    output: true
+    permalink: /blog/:year/:month/:day/:slug/
     fields:
       - {label: "Título", name: "title", widget: "string"}
       - {label: "Fecha", name: "date", widget: "datetime", format: "YYYY-MM-DD"}

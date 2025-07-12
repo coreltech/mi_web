@@ -1,0 +1,40 @@
+<!-- post.html -->
+---
+layout: none
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{{ page.title }} | CorelTech</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo-container">
+      <img src="/img/logo-coreltech.png" alt="Logo CorelTech" class="logo-img" />
+      <span class="logo-text">CorelTech</span>
+    </div>
+    <nav class="nav-links">
+      <a href="/">Inicio</a>
+      <a href="/blog.html">Blog</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="post-content">
+    <article>
+      <h1>{{ page.title }}</h1>
+      <p class="post-meta">{{ page.date | date: "%d/%m/%Y" }} — {{ page.author }}</p>
+      <div class="post-body">
+        {{ content }}
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 CorelTech. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

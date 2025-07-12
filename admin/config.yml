@@ -1,15 +1,15 @@
 backend:
   name: github
-  repo: CorelTech/mi_web # ¡Reemplaza esto!
+  repo: TU-USUARIO/mi_blog
   branch: main
 
-media_folder: "static/img/blog"
+media_folder: "img/blog"
 public_folder: "/img/blog"
 
 collections:
   - name: "blog"
     label: "Artículos del Blog"
-    folder: "_posts"  # Cambia a "blog" si no usas Jekyll
+    folder: "_posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
@@ -17,6 +17,6 @@ collections:
       - {label: "Fecha", name: "date", widget: "datetime", format: "YYYY-MM-DD"}
       - {label: "Autor", name: "author", widget: "string", default: "Equipo CorelTech"}
       - {label: "Descripción", name: "description", widget: "text"}
-      - {label: "Imagen destacada", name: "image", widget: "image", media_folder: "static/img/blog", public_folder: "/img/blog"}
+      - {label: "Imagen destacada", name: "featured_image", widget: "image", media_folder: "img/blog", public_folder: "/img/blog"}
       - {label: "Categoría", name: "category", widget: "select", options: ["Redes", "Hardware", "Software"]}
       - {label: "Contenido", name: "body", widget: "markdown"}
