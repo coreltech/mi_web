@@ -1,25 +1,22 @@
 backend:
-  name: git-gateway
-  branch: main  # Rama por defecto (no necesitas Git)
+  name: github
+  repo: CorelTech/mi_web # ¡Reemplaza esto!
+  branch: main
 
-# Carpeta donde se guardarán las imágenes
-media_folder: "img/blog"
+media_folder: "static/img/blog"
 public_folder: "/img/blog"
 
-# Colección de posts del blog
 collections:
   - name: "blog"
     label: "Artículos del Blog"
-    label_singular: "Artículo"
-    folder: "blog"  # Carpeta donde se guardan los posts
-    create: true    # Permite crear nuevos posts
+    folder: "_posts"  # Cambia a "blog" si no usas Jekyll
+    create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Título", name: "title", widget: "string"}
-      - {label: "Fecha", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false}
-      - {label: "Autor", name: "author", widget: "string", default: "Equipo CORELTECH"}
+      - {label: "Fecha", name: "date", widget: "datetime", format: "YYYY-MM-DD"}
+      - {label: "Autor", name: "author", widget: "string", default: "Equipo CorelTech"}
       - {label: "Descripción", name: "description", widget: "text"}
-      - {label: "Imagen destacada", name: "featured_image", widget: "image"}
-      - {label: "Categoría", name: "category", widget: "select", 
-          options: ["Redes", "Hardware", "Software", "Seguridad", "Consejos"]}
+      - {label: "Imagen destacada", name: "image", widget: "image", media_folder: "static/img/blog", public_folder: "/img/blog"}
+      - {label: "Categoría", name: "category", widget: "select", options: ["Redes", "Hardware", "Software"]}
       - {label: "Contenido", name: "body", widget: "markdown"}
