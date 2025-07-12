@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: CorelTech/mi_web # ¡Reemplaza esto!
+  branch: main
+
+media_folder: "static/img/blog"
+public_folder: "/img/blog"
+
+collections:
+  - name: "blog"
+    label: "Artículos del Blog"
+    folder: "_posts"  # Cambia a "blog" si no usas Jekyll
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Fecha", name: "date", widget: "datetime", format: "YYYY-MM-DD"}
+      - {label: "Autor", name: "author", widget: "string", default: "Equipo CorelTech"}
+      - {label: "Descripción", name: "description", widget: "text"}
+      - {label: "Imagen destacada", name: "image", widget: "image", media_folder: "static/img/blog", public_folder: "/img/blog"}
+      - {label: "Categoría", name: "category", widget: "select", options: ["Redes", "Hardware", "Software"]}
+      - {label: "Contenido", name: "body", widget: "markdown"}
