@@ -203,7 +203,7 @@ img {
 /* ===== HERO SECTION ===== */
 .hero-section {
   background: linear-gradient(rgba(0, 20, 40, 0.85), rgba(0, 20, 40, 0.85)), 
-              url('Img/hero-bg.jpg') center/cover no-repeat;
+              url('Img/hero-bg.png') center/cover no-repeat;
   min-height: 100vh;
   display: flex;
   align-items: center;
